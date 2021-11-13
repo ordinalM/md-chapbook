@@ -1,0 +1,96 @@
+@media screen {
+	body {
+		text-align: center;
+	}
+
+	.page {
+		font-family: "Inconsolata", monospace;
+		margin: 0 auto;
+		max-width: 600px;
+		text-align: left;
+		line-height: 1.3em;
+	}
+}
+
+@media print {
+	body {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	p {
+		text-align: center;
+		font-style: italic;
+	}
+
+	.page {
+		display: block;
+		position: absolute;
+		width: 25%;
+		height: 50%;
+		padding: 20px 30px;
+		margin: 0;
+		box-sizing: border-box;
+		overflow: hidden;
+		font-family: "Inconsolata", monospace;
+		text-align: justify;
+		font-size: 10pt;
+	}
+
+	h1, h2 {
+		margin-top: 0;
+		text-align: center;
+	}
+
+	.p1 {
+		top: 50%;
+		left: 50%;
+	}
+
+	.p2 {
+		top: 50%;
+		left: 75%;
+	}
+
+	.p3 {
+		top: 50%;
+		left: 0;
+	}
+
+	.p4, .p5, .p6, .p7 {
+		transform: rotate(+180deg)
+	}
+
+	.p4 {
+		top: 0;
+		left: 75%;
+	}
+
+	.p5 {
+		top: 0;
+		left: 50%;
+	}
+
+	.p6 {
+		top: 0;
+		left: 25%;
+	}
+
+	.p7 {
+		top: 0;
+		left: 0;
+	}
+
+	.p8 {
+		top: 50%;
+		left: 25%;
+	}
+
+	ul {
+		margin-left: 0;
+		padding-left: 1em;
+	}
+}
