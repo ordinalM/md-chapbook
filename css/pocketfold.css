@@ -1,14 +1,8 @@
 @media screen {
 	body {
-		text-align: center;
 	}
 
 	.page {
-		font-family: "Inconsolata", monospace;
-		margin: 0 auto;
-		max-width: 600px;
-		text-align: left;
-		line-height: 1.3em;
 	}
 }
 
@@ -35,9 +29,6 @@
 		margin: 0;
 		box-sizing: border-box;
 		overflow: hidden;
-		font-family: "Inconsolata", monospace;
-		text-align: justify;
-		font-size: 10pt;
 	}
 
 	h1, h2 {

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 die_with() {
-  echo "$1"
+  echo "ERROR: $1"
   exit 1
 }
 
@@ -20,10 +20,10 @@ cat "html/header.html"
 
 I=1
 find "$TMPDIR_PAGES" -type f | sort | while read -r PAGEFILE; do
-    echo "<div class=\"page p$I\">"
-    I=$((I+1))
-    sed "s$HR_REGEX/" "$PAGEFILE" | pandoc -f markdown -t html5
-    echo '</div>'
+  echo "<div class=\"page p$I\">"
+  I=$((I + 1))
+  sed "s$HR_REGEX/" "$PAGEFILE" | pandoc -f markdown -t html5
+  echo "</div>"
 done
 
 cat "html/footer.html"
