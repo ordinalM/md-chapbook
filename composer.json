@@ -1,0 +1,20 @@
+{
+	"name": "ordinal/md-chapbook",
+	"require-dev": {
+		"vimeo/psalm": "^4.12"
+	},
+	"authors": [
+		{
+			"name": "OrdinalM",
+			"email": "ordinal@ordinalmalaprop.com"
+		}
+	],
+	"require": {
+		"michelf/php-markdown": "^1.9"
+	},
+	"autoload": {
+		"psr-4": {
+			"Ordinal\\": "src"
+		}
+	}
+}

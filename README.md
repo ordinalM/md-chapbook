@@ -1,4 +1,4 @@
-# md-booklet
+# md-chapbook
 
 ## Goals
 
