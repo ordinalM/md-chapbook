@@ -1,3 +1,23 @@
-#!/usr/bin/env bash
+#!/usr/bin/env php
+<?php
 
-php src/run.php "$1"
+use OrdinalM\Chapbook;
+use OrdinalM\ChapbookException;
+
+try {
+	require_once 'vendor/autoload.php';
+    /** @var string $filename */
+	$filename = $argv[1];
+	if (!$filename){
+		throw new ChapbookException('First argument should be a markdown file');
+	}
+	$chapbook = new Chapbook();
+	$chapbook->loadFromFile(realpath($filename))
+      ->addCss('monospace')
+  ;
+	echo $chapbook->createHtml();
+}
+catch (ChapbookException $chapbookException){
+	echo 'ERROR: '.$chapbookException->getMessage().PHP_EOL;
+	exit(1);
+}

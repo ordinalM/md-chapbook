@@ -1,9 +1,6 @@
-@media screen {
-	body {
-	}
-
-	.page {
-	}
+body {
+	background: #fff;
+	color: #000;
 }
 
 @media print {

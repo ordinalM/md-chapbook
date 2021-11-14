@@ -1,256 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title></title>
-  <style>
-	  @media screen {
-		  body {
-		  }
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+    body {
+	background: #fff;
+	color: #000;
+}
 
-		  .page {
-		  }
-	  }
+@media print {
+	body {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
 
-	  @media print {
-		  body {
-			  position: absolute;
-			  width: 100%;
-			  height: 100%;
-			  margin: 0;
-			  padding: 0;
-		  }
+	p {
+		text-align: center;
+		font-style: italic;
+	}
 
-		  p {
-			  text-align: center;
-			  font-style: italic;
-		  }
+	.page {
+		display: block;
+		position: absolute;
+		width: 25%;
+		height: 50%;
+		padding: 20px 30px;
+		margin: 0;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
 
-		  .page {
-			  display: block;
-			  position: absolute;
-			  width: 25%;
-			  height: 50%;
-			  padding: 20px 30px;
-			  margin: 0;
-			  box-sizing: border-box;
-			  overflow: hidden;
-		  }
+	h1, h2 {
+		margin-top: 0;
+		text-align: center;
+	}
 
-		  h1, h2 {
-			  margin-top: 0;
-			  text-align: center;
-		  }
+	.p1 {
+		top: 50%;
+		left: 50%;
+	}
 
-		  .p1 {
-			  top: 50%;
-			  left: 50%;
-		  }
+	.p2 {
+		top: 50%;
+		left: 75%;
+	}
 
-		  .p2 {
-			  top: 50%;
-			  left: 75%;
-		  }
+	.p3 {
+		top: 50%;
+		left: 0;
+	}
 
-		  .p3 {
-			  top: 50%;
-			  left: 0;
-		  }
+	.p4, .p5, .p6, .p7 {
+		transform: rotate(+180deg)
+	}
 
-		  .p4, .p5, .p6, .p7 {
-			  transform: rotate(+180deg)
-		  }
+	.p4 {
+		top: 0;
+		left: 75%;
+	}
 
-		  .p4 {
-			  top: 0;
-			  left: 75%;
-		  }
+	.p5 {
+		top: 0;
+		left: 50%;
+	}
 
-		  .p5 {
-			  top: 0;
-			  left: 50%;
-		  }
+	.p6 {
+		top: 0;
+		left: 25%;
+	}
 
-		  .p6 {
-			  top: 0;
-			  left: 25%;
-		  }
+	.p7 {
+		top: 0;
+		left: 0;
+	}
 
-		  .p7 {
-			  top: 0;
-			  left: 0;
-		  }
+	.p8 {
+		top: 50%;
+		left: 25%;
+	}
 
-		  .p8 {
-			  top: 50%;
-			  left: 25%;
-		  }
+	ul {
+		margin-left: 0;
+		padding-left: 1em;
+	}
+}
+@media screen {
+	body {
+		text-align: center;
+	}
 
-		  ul {
-			  margin-left: 0;
-			  padding-left: 1em;
-		  }
-	  }
+	.page {
+		font-family: "Inconsolata", monospace;
+		margin: 0 auto;
+		max-width: 600px;
+		text-align: left;
+		line-height: 1.3em;
+	}
+}
 
-	  @media screen {
-		  body {
-			  text-align: center;
-		  }
-
-		  .page {
-			  font-family: "Inconsolata", monospace;
-			  margin: 0 auto;
-			  max-width: 600px;
-			  text-align: left;
-			  line-height: 1.3em;
-		  }
-	  }
-
-	  @media print {
-		  .page {
-			  font-family: "Inconsolata", monospace;
-			  text-align: justify;
-			  font-size: 10pt;
-		  }
-	  }
-
-	  ?
-	  >
-  </style>
+@media print {
+	.page {
+		font-family: "Inconsolata", monospace;
+		text-align: justify;
+		font-size: 10pt;
+	}
+}
+	</style>
 </head>
 <body>
 
 <div class="page p1">
-  <h1>ordinal's flat</h1>
+<h1>ordinal's flat</h1>
 
-  <p>a semi-fictionalised pocket place based on where I live</p>
+<p>a semi-fictionalised pocket place based on where I live</p>
 
-  <h2>why would I go there</h2>
+<h2>why would I go there</h2>
 
-  <ul>
-    <li>you are me and have lost your keys and also your memory apart from that you live there</li>
-    <li>you've been given bad info by a deceitful supernatural entity</li>
-    <li>the <strong>robot vacuum</strong> needs to be returned to the psychological warfare lab from whence it came</li>
-  </ul>
+<ul>
+<li>you are me and have lost your keys and also your memory apart from that you live there</li>
+<li>you've been given bad info by a deceitful supernatural entity</li>
+<li>the <strong>robot vacuum</strong> needs to be returned to the psychological warfare lab from whence it came</li>
+</ul>
 
 </div>
 
 <div class="page p2">
-  <h2>outside the block</h2>
+<h2>outside the block</h2>
 
-  <ul>
-    <li>six storeys, nothing much on the roof</li>
-    <li>on a crossroads with two sides facing roads - one main road, one side road</li>
-    <li>main entrance with entryphone</li>
-    <li>side gate with lock</li>
-    <li>scaffolding on exterior walls</li>
-    <li>(alarmed, unknown quality, 1d6: 1-2=actually good, 3-4=easily bypassed if you know what you're doing,
-      5-6=basically fake)
-    </li>
-  </ul>
+<ul>
+<li>six storeys, nothing much on the roof</li>
+<li>on a crossroads with two sides facing roads - one main road, one side road</li>
+<li>main entrance with entryphone</li>
+<li>side gate with lock</li>
+<li>scaffolding on exterior walls</li>
+<li>(alarmed, unknown quality, 1d6: 1-2=actually good, 3-4=easily bypassed if you know what you're doing, 5-6=basically fake)</li>
+</ul>
 
 </div>
 
 <div class="page p3">
-  <h2>inside the block</h2>
+<h2>inside the block</h2>
 
-  <ul>
-    <li>lobby behind main entrance with rickety lift and main staircase around lift shaft</li>
-    <li>side doors from lobby</li>
-    <li>(left: cloister around central courtyard with little garden;</li>
-    <li>right: bins, garages, unused lockups)</li>
-    <li>concrete walkways around each floor look down onto garden</li>
-    <li>my flat is on the fourth floor, right in the corner, reasonably sturdy door, Yale lock, the doorbell doesn't
-      work, the doormat is ragged now but says WELCOME
-    </li>
-  </ul>
+<ul>
+<li>lobby behind main entrance with rickety lift and main staircase around lift shaft</li>
+<li>side doors from lobby</li>
+<li>(left: cloister around central courtyard with little garden;</li>
+<li>right: bins, garages, unused lockups)</li>
+<li>concrete walkways around each floor look down onto garden</li>
+<li>my flat is on the fourth floor, right in the corner, reasonably sturdy door, Yale lock, the doorbell doesn't work, the doormat is ragged now but says WELCOME</li>
+</ul>
 
 </div>
 
 <div class="page p4">
-  <h2>the vestibule</h2>
+<h2>the vestibule</h2>
 
-  <ul>
-    <li>front door to the west</li>
-    <li>doorway south to living room</li>
-    <li>cupboard on east wall with a washing machine, fuse box, a stepladder, tins of paint, spare parts for a robot
-      vacuum cleaner
-    </li>
-    <li>the washing machine is running and looks like it will bounce right out of the cupboard, 1 in 6 chance per minute
-      that it actually does
-    </li>
-    <li>2 in 6 chance the <strong>robot vacuum</strong> is trapped here and can't find its way out</li>
-  </ul>
+<ul>
+<li>front door to the west</li>
+<li>doorway south to living room</li>
+<li>cupboard on east wall with a washing machine, fuse box, a stepladder, tins of paint, spare parts for a robot vacuum cleaner</li>
+<li>the washing machine is running and looks like it will bounce right out of the cupboard, 1 in 6 chance per minute that it actually does</li>
+<li>2 in 6 chance the <strong>robot vacuum</strong> is trapped here and can't find its way out</li>
+</ul>
 
 </div>
 
 <div class="page p5">
-  <h2>the living room</h2>
+<h2>the living room</h2>
 
-  <ul>
-    <li>doorway north to the vestibule</li>
-    <li>doorway east to small hallway</li>
-    <li>windows to south facing scaffolding, locked door to tiny exterior balcony facing main road</li>
-    <li>almost entirely unused sofa</li>
-    <li>haunted compact film cameras and unread political books on shelves by north door</li>
-    <li>macbook pro that refuses to work when not plugged in</li>
-    <li>walking without shoes will do damage from hard carpet nails</li>
-  </ul>
+<ul>
+<li>doorway north to the vestibule</li>
+<li>doorway east to small hallway</li>
+<li>windows to south facing scaffolding, locked door to tiny exterior balcony facing main road</li>
+<li>almost entirely unused sofa</li>
+<li>haunted compact film cameras and unread political books on shelves by north door</li>
+<li>macbook pro that refuses to work when not plugged in</li>
+<li>walking without shoes will do damage from hard carpet nails</li>
+</ul>
 
 </div>
 
 <div class="page p6">
-  <h2>small hallway</h2>
+<h2>small hallway</h2>
 
-  <ul>
-    <li>north to kitchen, east to bathroom, south to bedroom</li>
-  </ul>
+<ul>
+<li>north to kitchen, east to bathroom, south to bedroom</li>
+</ul>
 
-  <h2>kitchen</h2>
+<h2>kitchen</h2>
 
-  <ul>
-    <li>tiny galleyway with cooker from the 70s and cupboards (will shower you with spices and crisps when opened)</li>
-  </ul>
+<ul>
+<li>tiny galleyway with cooker from the 70s and cupboards (will shower you with spices and crisps when opened)</li>
+</ul>
 
-  <h2>bathroom</h2>
+<h2>bathroom</h2>
 
-  <ul>
-    <li>bath and shower and toilet</li>
-    <li>high chance the ceiling is leaking and may collapse altogether</li>
-  </ul>
+<ul>
+<li>bath and shower and toilet</li>
+<li>high chance the ceiling is leaking and may collapse altogether</li>
+</ul>
 
 </div>
 
 <div class="page p7">
-  <h2>bedroom</h2>
+<h2>bedroom</h2>
 
-  <ul>
-    <li>north door to small hallway</li>
-    <li>wardrobes, clothes</li>
-    <li>double bed covered with a blanket covered with arcane literature, fountain pens, and camera parts. The <strong>robot
-      vacuum</strong> hides things under the bed.
-    </li>
-    <li>south windows onto scaffolding</li>
-    <li>(no space to open, would need to be broken to get in or out)</li>
-    <li>monitor and gaming console possessed by the spirit of lockdown on table by east wall (playing causes
-      paralysis)
-    </li>
-  </ul>
+<ul>
+<li>north door to small hallway</li>
+<li>wardrobes, clothes</li>
+<li>double bed covered with a blanket covered with arcane literature, fountain pens, and camera parts. The <strong>robot vacuum</strong> hides things under the bed.</li>
+<li>south windows onto scaffolding</li>
+<li>(no space to open, would need to be broken to get in or out)</li>
+<li>monitor and gaming console possessed by the spirit of lockdown on table by east wall (playing causes paralysis)</li>
+</ul>
 
 </div>
 
 <div class="page p8">
-  <h2>the robot vacuum</h2>
+<h2>the robot vacuum</h2>
 
-  <ul>
-    <li>cannot be broken by acts of anger, they will at worst make it beep (see below)</li>
-    <li>can be distracted by shoelaces, USB cables, fringes on scarves, items of post left under the letterbox on the
-      carpet
-    </li>
-    <li>starved of and desperate for attention: will follow anyone about, tripping them up</li>
-    <li>if not receiving attention will pretend it has a fault and start to beep plaintively</li>
-    <li><strong>beeping</strong>: psychic damage to everyone hearing it each round until rescued</li>
-  </ul>
+<ul>
+<li>cannot be broken by acts of anger, they will at worst make it beep (see below)</li>
+<li>can be distracted by shoelaces, USB cables, fringes on scarves, items of post left under the letterbox on the carpet</li>
+<li>starved of and desperate for attention: will follow anyone about, tripping them up</li>
+<li>if not receiving attention will pretend it has a fault and start to beep plaintively</li>
+<li><strong>beeping</strong>: psychic damage to everyone hearing it each round until rescued</li>
+</ul>
 
 </div>
 </body>

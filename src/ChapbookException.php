@@ -1,6 +1,6 @@
 <?php
 
-namespace Ordinal;
+namespace OrdinalM;
 
 use Exception;
 
