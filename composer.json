@@ -1,5 +1,5 @@
 {
-	"name": "ordinal/md-chapbook",
+	"name": "ordinalm/md-chapbook",
 	"require-dev": {
 		"vimeo/psalm": "^4.12"
 	},
