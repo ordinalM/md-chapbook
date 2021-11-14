@@ -90,6 +90,15 @@ class Chapbook {
 	}
 
 	/**
+	 * @param string[] $css
+	 */
+	public function setCss(array $css): Chapbook{
+		$this->css = $css;
+
+		return $this;
+	}
+
+	/**
 	 * @throws ChapbookException
 	 */
 	private function getCssIncludes(): string{
