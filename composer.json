@@ -1,6 +1,7 @@
 {
 	"name": "ordinalm/md-chapbook",
 	"require-dev": {
+		"roave/security-advisories": "dev-latest",
 		"vimeo/psalm": "^4.12"
 	},
 	"authors": [

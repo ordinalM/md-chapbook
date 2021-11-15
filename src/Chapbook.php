@@ -99,6 +99,13 @@ class Chapbook {
 	}
 
 	/**
+	 * @return string[]
+	 */
+	public function getCss(): array{
+		return $this->css;
+	}
+
+	/**
 	 * @throws ChapbookException
 	 */
 	private function getCssIncludes(): string{
