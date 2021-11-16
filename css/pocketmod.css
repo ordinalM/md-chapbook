@@ -35,46 +35,46 @@ body {
 
 	.p1 {
 		top: 50%;
-		left: 25%;
-	}
-
-	.p2 {
-		top: 50%;
-		left: 50%;
-	}
-
-	.p3 {
-		top: 50%;
 		left: 75%;
 	}
 
-	.p4, .p5, .p6, .p7 {
+	.p2, .p3, .p4, .p5 {
 		transform: rotate(+180deg)
+	}
+
+	.p2 {
+		top: 0;
+		left: 75%;
+	}
+
+	.p3 {
+		top: 0;
+		left: 50%;
 	}
 
 	.p4 {
 		top: 0;
-		left: 75%;
-	}
-
-	.p5 {
-		top: 0;
-		left: 50%;
-	}
-
-	.p6 {
-		top: 0;
 		left: 25%;
 	}
 
-	.p7 {
-		top: 0;
+	.p5 {
+		top: 50%;
 		left: 0;
+	}
+
+	.p6 {
+		top: 50%;
+		left: 0;
+	}
+
+	.p7 {
+		top: 50%;
+		left: 25%;
 	}
 
 	.p8 {
 		top: 50%;
-		left: 0;
+		left: 75%;
 	}
 
 	ul {
